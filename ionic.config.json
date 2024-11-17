@@ -1,0 +1,7 @@
+{
+  "name": "ionic-vue-firebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
