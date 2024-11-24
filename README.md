@@ -496,7 +496,7 @@ async deleteTodo(id: string) {
 }
 ```
 
-| Tombol Hapus Task                            | Berhasil Edit Task                                |
+| Tombol Hapus Task                            | Berhasil Hapus Task                               |
 | -------------------------------------------- | ------------------------------------------------- |
 | ![Hapus Task](./snapshots/pilihan_hapus.png) | ! ![Berhasil Hapus Task](./snapshots/deleted.png) |
 
