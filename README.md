@@ -21,6 +21,7 @@ Shift Lama: D
     - [2. Tambah Task dan Update Task](#2-tambah-task-dan-update-task)
     - [3. Update Status Task](#3-update-status-task)
     - [4. Delete Task](#4-delete-task)
+    - [5. Build Aplikasi menjadi file `.apk`](#5-build-aplikasi-menjadi-file-apk)
 
 ## Tugas 9
 
@@ -499,6 +500,38 @@ async deleteTodo(id: string) {
 | -------------------------------------------- | ------------------------------------------------- |
 | ![Hapus Task](./snapshots/pilihan_hapus.png) | ! ![Berhasil Hapus Task](./snapshots/deleted.png) |
 
+### 5. Build Aplikasi menjadi file `.apk`
+
+1. Menjalankan perintah berikut pada CLI project.
+
+```bash
+ionic capacitor add android
 ```
 
+2. Lalu melakukan build aplikasi android
+
+```bash
+ionic build
 ```
+
+3. Setelah itu melakukan sinkronisasi aplikasi android yang telah dibuild dengan capacitor
+
+```bash
+ionic capacitor copy android
+```
+
+4. Kemudian melakukan Build `.apk` melalui Android Studio
+
+Hal ini dapat dilakukan dengan membuka folder android pada Android Studio. Kemudian pilih menu `BUild`, setelah itu pilih `Build App Bundle(s) / APK(s)`, kemudian pilih `Build APK(s)`.
+
+![Build .apk](<./snapshots/build%20apk(s).png>)
+
+Dengan hal di atas, gradle akan melakukan build aplikasi Ionic.
+
+Hasil dari build tersebut dapat dibuka melalui direktori berikut `android\app\build\outputs\apk\debug\app-debug.apk`
+
+Setelah itu, aplikasi `.apk` tersebut bisa di install pada sistem operasi Android.
+
+| Direktori BUild .apk                                    | Hasil Aplikasi yang telah diinstall                                                                 |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![Direktori BUild .apk](./snapshots/folder%20build.png) | ![Hasil Aplikasi yang telah diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) |
