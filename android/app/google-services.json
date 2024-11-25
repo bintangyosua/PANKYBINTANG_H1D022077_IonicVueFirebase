@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "973726170606",
+    "project_id": "vue-firebase-25ebb",
+    "storage_bucket": "vue-firebase-25ebb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973726170606:android:71f21042c2d31f505622ff",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973726170606-jor4772ebhu43ae10bba5oss2s1kj3cr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.ionic.starter",
+            "certificate_hash": "bdbab70b973f9b6ddc15a5d962191c7816d11d6e"
+          }
+        },
+        {
+          "client_id": "973726170606-f13m0abfb207dgb4burii6hraj586vda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMDn0xWtUoo63G5BetWwUNKCFEmXNm5BM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973726170606-f13m0abfb207dgb4burii6hraj586vda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
