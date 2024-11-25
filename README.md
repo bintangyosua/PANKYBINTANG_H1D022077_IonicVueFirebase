@@ -559,6 +559,6 @@ Hasil dari build tersebut dapat dibuka melalui direktori berikut `android\app\bu
 
 Setelah itu, aplikasi `.apk` tersebut bisa di install pada sistem operasi Android.
 
-| Direktori Build .apk                                    | Hasil Aplikasi yang telah diinstall                                                                 | Aplikasi Telah Diinstall                                                           |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| ![Direktori BUild .apk](./snapshots/folder%20build.png) | ![Hasil Aplikasi yang telah diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) | ![Aplikasi diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) |
+| Direktori Build .apk                                    | Hasil Aplikasi yang telah diinstall                                                                 | Aplikasi Telah Diinstall                                 |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| ![Direktori BUild .apk](./snapshots/folder%20build.png) | ![Hasil Aplikasi yang telah diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) | ![Aplikasi diinstall](./snapshots/telah%20diinstall.jpg) |
