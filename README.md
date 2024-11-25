@@ -517,10 +517,37 @@ ionic build
 3. Setelah itu melakukan sinkronisasi aplikasi android yang telah dibuild dengan capacitor
 
 ```bash
-ionic capacitor copy android
+ionic cap sync android
 ```
 
-4. Kemudian melakukan Build `.apk` melalui Android Studio
+4. Generate SHA-1 ataupun SHA-256
+
+Generate key ini supaya dapat login firebase melalui sistem operasi android. caranya yaitu dengan mengetikkan command berikut pada folder `/android`.
+
+```bash
+./gradlew signingReport
+```
+
+Perintah di atas akan menghasilkan output seperti di bawah pada terminal:
+
+![Output signingReport](./snapshots/sha.png)
+
+5. Menambahkan App Android pada Firebase
+   1. Masuk ke Project Settings
+   2. General (scroll) hingga section `Your apps`
+   3. Tambahkan aplikasi android.
+      ![add android to firebase](./snapshots/add_key.png)
+   4. Ikut langkah langkahnya dengan memasukkan app_id dan SHA1
+
+| app_id                            | SHA1                         |
+| --------------------------------- | ---------------------------- |
+| ![app_id](./snapshots/app_id.png) | ![SHA1](./snapshots/sha.png) |
+
+6. Kemudian Build project menjadi `/.apk` pada Android Studio
+
+```bash
+ionic cap open android
+```
 
 Hal ini dapat dilakukan dengan membuka folder android pada Android Studio. Kemudian pilih menu `BUild`, setelah itu pilih `Build App Bundle(s) / APK(s)`, kemudian pilih `Build APK(s)`.
 
@@ -532,6 +559,6 @@ Hasil dari build tersebut dapat dibuka melalui direktori berikut `android\app\bu
 
 Setelah itu, aplikasi `.apk` tersebut bisa di install pada sistem operasi Android.
 
-| Direktori BUild .apk                                    | Hasil Aplikasi yang telah diinstall                                                                 |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![Direktori BUild .apk](./snapshots/folder%20build.png) | ![Hasil Aplikasi yang telah diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) |
+| Direktori Build .apk                                    | Hasil Aplikasi yang telah diinstall                                                                 | Aplikasi Telah Diinstall                                                           |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| ![Direktori BUild .apk](./snapshots/folder%20build.png) | ![Hasil Aplikasi yang telah diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) | ![Aplikasi diinstall](./snapshots/Hasil%20aplikasi%20yang%20telah%20diinstall.jpg) |
